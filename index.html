@@ -90,9 +90,9 @@ init();
         		<label for="pa2">Contraseña:</label>
         		<input type="password" name="pa2" id="pa2"> 
                 
-                <a data-role="button" data-icon="check" style="width:35%; background-color:#AEDAFF" data-inline="true" onClick="loginVal2()">Entrar</a> 
+                <a id="menu" data-role="button" data-icon="check" style="width:35%; background-color:#418d6a" data-inline="true" onClick="loginVal2()">Entrar</a> 
                <!-- <input type="submit" value="Entrar" data-icon="check" data-transition="slide"  style="width:120px;" data-inline="true"> -->
-                <a data-role="button" data-icon="edit" href="#pagina2" style="width:35%; background-color:#B8E8C1;" data-inline="true" onClick="mostrarDatos()">Registrate</a>               		
+                <a id="menu" data-role="button" data-icon="edit" href="#pagina2" style="width:35%; background-color:#4779b2;" data-inline="true" onClick="mostrarDatos()">Registrate</a>               		
            </form> 
               <br><br><a href="" onClick="passEmail()">He olvidado mi contraseña</a>                
 		</div>
@@ -221,9 +221,10 @@ init();
   <div data-role="footer" data-position="fixed"> 
    <div data-role="navbar">
             <ul>
-            <li><a href="#pagina1" data-role="button" data-icon="calendar" onClick="init()" style="background-color:#FAB5FF">Diario</a></li>
-            <li><a href="#pagina3" data-role="button" data-icon="mail" onClick="crearLista()" style="background-color:#AEDAFF"><img src="" class="globo" style="float:left" >  Mensajes</a></li>
-            <li><a href="#pagina4" data-role="button" data-icon="camera" onClick="listaFotos()" style="background-color:#B8E8C1;"><img src="" class="globofoto" style="float:left"> Fotos</a></li>
+            <li><a id="menu" href="#pagina1" data-role="button" data-icon="calendar" onClick="init()" style="background-color:#e6697b">Diario</a></li>
+            <li><a id="menu" href="#pagina3" data-role="button" data-icon="mail" onClick="crearLista()" style="background-color:#418d6a"><img src="" class="globo" style="float:left" >  Mensajes</a></li>
+            <li><a id="menu" href="#pagina4" data-role="button" data-icon="camera" onClick="listaFotos()" style="background-color:#4779b2;"><img src="" class="globofoto" style="float:left"> Fotos</a></li>
+            <li><a id="menu" href="#pagina5" data-role="button" data-icon="info" style="background-color:#e8df58">Ayuda</a></li>
             </ul>
 	</div>
   </div>
@@ -286,7 +287,7 @@ init();
    <div>
          <!-- Botones de registro -->
          <center>
-      <a href="#pagina7" onClick="" data-icon="check" data-iconpos="left" data-role="button" data-rel="dialog" style="width:40%; background-color:#AEDAFF">Guardar</a>
+      <a id="menu" href="#pagina7" onClick="" data-icon="check" data-iconpos="left" data-role="button" data-rel="dialog" style="width:40%; background-color:#418d6a">Guardar</a>
       	</center>
    </div> 
    
@@ -340,6 +341,67 @@ init();
  
 </div>
 <!-- FIN PAGINA 3-->
+
+<!----------------------------PAGINA 5-------------------------------->
+<div data-role="page" id="pagina5" data-theme="a" style="background:url(imagenes/fondogusy.png);">
+	 <div style="height:20px; visibility:hidden"> </div> 
+     
+	<div data-role="header" >
+    <a href="#page1" data-role="button" data-transition="slide" data-icon="carat-l" data-iconpos="notext" onClick="init()" data-theme="a">Atrás</a>
+		<h1>AYUDA</h1>
+	</div>
+	
+    <div data-role="content">	
+			   
+            
+            <p><a href="#" data-role="button" data-icon="bullets" data-iconpos="notext" data-inline="true"></a><strong>Registro y modificación</strong><br>
+            	<ul>
+                 <li>Introduzca los datos del familiar (padre, madre o persona autorizada) en los campos correspondientes.</li>
+                 <li>Asegúrese de que éstos son correctos para que la aplicación funcione adecuadamente.</li>
+                 <li>Procederemos ahora a registrar al alumn@.</li>
+                </ul>                
+          		
+                <p style="margin-left: 2em"><br>
+                 - Nombre del alumn@.<br>
+      			- Apellidos del alumn@.</p>
+                <p style="margin-left: 2em">- Código del alumn@): Se solicita en la Secretaría del Centro.<br>
+                  A continuación presionar el botón <strong>"Guardar"</strong>.</p>
+
+		     <a href="#" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true"></a><strong>Mensajes</strong><br>
+             <ul>
+             <li>En este apartado se muestran todas las circulares enviadas por el Centro a nuestra aplicación móvil.</li>
+             <li> Presionando sobre el título de la circular accederá a su lectura.</li>
+             <li>Pulsando sobre el icono <strong>"X"</strong> se borrará la circular elegida.</li>
+             </ul>
+ 			<a href="#" data-role="button" data-icon="camera" data-iconpos="notext" data-inline="true"></a><strong>Fotos</strong><br>
+             <ul>
+             <li>En este apartado se muestran todas las Fotos enviadas por el Centro a nuestra aplicación móvil.</li>
+             <li> Presionando sobre el título de la circular accederá a su lectura.</li>
+             <li>Pulsando sobre el icono <strong>"X"</strong> se borrará la circular elegida.</li>
+             </ul>
+ 	
+<a href="#" data-role="button" data-icon="phone" data-iconpos="notext" data-inline="true"></a><strong>Contacto</strong>
+ 	<ul>
+    <li> Nuestro correo de contacto: info@creatactil.com.</li>
+    </ul>
+           </p>
+		      <center><strong>
+		      <label>&copy; Todos los derechos reservados creaTáctil. </label></strong><a onClick="window.open('http://www.creatactil.com/centrosinfantiles/avisolegal/index.html','_system','location=no','closebuttoncaption=Return')">Aviso Legal y Política de Privacidad</a></center>      
+	</div>
+    
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <div data-role="navbar" >
+    <ul>
+    <li><a id="menu" href="#pagina1" data-role="button" data-icon="calendar" onClick="init()" style="background-color:#e6697b">Diario</a></li>
+    <li><a id="menu" href="#pagina3" data-role="button" data-icon="mail" onClick="crearLista()" style="background-color:#418d6a"><img src="" class="globo" style="float:left" >  Mensajes</a></li>
+    <li><a id="menu" href="#pagina4" data-role="button" data-icon="camera" onClick="listaFotos()" style="background-color:#4779b2;"><img src="" class="globofoto" style="float:left"> Fotos</a></li>
+    <li><a id="menu" href="#pagina5" data-role="button" data-icon="info" style="background-color:#e8df58">Ayuda</a></li>
+    </ul>
+	</div>
+ 
+    </div>
+	 
+</div> 
 
 <!------------------------PAGINA 7----------------------------------------------->
 <div data-role="page" id="pagina7" data-theme="a">
@@ -482,8 +544,8 @@ Asimismo, CREATÁCTIL S.L se compromete a adoptar en todo momento los niveles de
 	   	    
             <center>
             <div data-role="controlgroup" data-type="horizontal">
-             <a href="#pagina1" data-role="button" data-icon="back" style="background-color:#B8E8C1;">No</a>
-			<a href="#pagina2" data-role="button" onClick="nuevoAlumno()" data-icon="check" style="background-color:#AEDAFF">Si</a>
+             <a href="#pagina1" data-role="button" data-icon="back" style="background-color:#4779b2;">No</a>
+			<a href="#pagina2" data-role="button" onClick="nuevoAlumno()" data-icon="check" style="background-color:#418d6a">Si</a>
             </div>
             </center>
             </div>
