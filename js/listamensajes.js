@@ -61,7 +61,7 @@ function crearLista(data) {
 		    content = '<div data-role="page"  style="background:#FFFFFF;" id="id_' + index + '" data-url="id_' + index + '" data-theme="a" >' +
 					'<div style="height:20px; visibility:hidden"> </div> '+
 					'<div data-role="header">' + 
-					'<a href="#pagina3" data-role="button" data-icon="back" onclick="crearLista()" class="ui-link ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" role="button">Atrás</a>'+
+					'<a href="" data-role="button" data-icon="back" onclick="crearLista()" class="ui-link ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all" role="button">Atrás</a>'+
 					
 					'<h1>' + item.titulo + '</h1>' +
 					'</div>' +
@@ -78,7 +78,7 @@ function crearLista(data) {
 								  '<br>'+
 								  '<br>'+
 								  '<br>'+
-								  '<a href="#page11" style="color:#900"  data-rel="dialog" onClick="globo(), textofirma(\''+item.registro+'\' ), textofirma2(\''+item.nombre_alumno+'\' ), textofirma3(\''+item.cial+'\' ), textofirma4(\''+item.codigo+'\' ) ">'+item.firma+'</a>'+
+								  '<a href="#page11" style="color:#900" data-transition="pop" onClick="globo(), textofirma(\''+item.registro+'\' ), textofirma2(\''+item.nombre_alumno+'\' ), textofirma3(\''+item.cial+'\' ), textofirma4(\''+item.codigo+'\' ) ">'+item.firma+'</a>'+
 								   
                                   '</div>' +
                                 '</p>' +
@@ -99,9 +99,9 @@ function crearLista(data) {
 		
 		 '<div data-role="navbar" class="ui-navbar" role="navigation">'+
          '<ul class="ui-grid-c">'+
-         '<li class="ui-block-a"><a id="menu" href="#pagina1" data-role="button" data-icon="calendar" onclick="init()" class="ui-link ui-btn ui-icon-calendar ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#e6697b">Diario</a></li>'+
-         '<li class="ui-block-b"><a id="menu" href="#pagina3" data-role="button" data-icon="mail" onclick="crearLista()" class="ui-link ui-btn ui-icon-mail ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#418d6a"><img src="" class="globo" style="float:left">  Mensajes</a></li>'+
-         '<li class="ui-block-c"><a id="menu" href="#pagina4" data-role="button" data-icon="camera" onclick="listaFotos()" class="ui-link ui-btn ui-icon-camera ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#4779b2"><img src="" class="globofoto" style="float:left"> Fotos</a></li>'+
+         '<li class="ui-block-a"><a id="menu" href="" data-role="button" data-icon="calendar" onclick="init()" class="ui-link ui-btn ui-icon-calendar ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#e6697b">Diario</a></li>'+
+         '<li class="ui-block-b"><a id="menu" href="" data-role="button" data-icon="mail" onclick="crearLista()" class="ui-link ui-btn ui-icon-mail ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#418d6a"><img src="" class="globo" style="float:left">  Mensajes</a></li>'+
+         '<li class="ui-block-c"><a id="menu" href="" data-role="button" data-icon="camera" onclick="listaFotos()" class="ui-link ui-btn ui-icon-camera ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#4779b2"><img src="" class="globofoto" style="float:left"> Fotos</a></li>'+
          '<li class="ui-block-d"><a id="menu" href="#pagina6" data-role="button" data-icon="plus" class="ui-link ui-btn ui-icon-plus ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-color:#e8df58" >Más...</a></li>'+
 		  '</ul></div>'
 		
