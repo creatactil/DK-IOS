@@ -70,13 +70,13 @@
 		<plugin name="org.apache.cordova.splashscreen" source="pgb" spec="0.3.4" />
 		<plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.11" />
 		
-						
+		<!-- 				
 		<plugin name="File" value="CDVFile" />
 		<plugin name="FileTransfer" value="CDVFileTransfer" />
 		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 		<plugin name="Media" value="CDVSound" />
 		<plugin name="Notification" value="CDVNotification" />
-		<plugin name="SplashScreen" value="CDVSplashScreen" />
+		<plugin name="SplashScreen" value="CDVSplashScreen" /> -->
 		
 		<icon src="imagenes/29.png" gap:platform="ios" width="29" height="29" />
 		<icon src="imagenes/40.png" gap:platform="ios" width="40" height="40" />
