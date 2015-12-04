@@ -8,12 +8,13 @@ if (typeof xdni == 'undefined'){
             true,
             true);
 		
-		nhijos();
-		nombresalu();
-		dmanana();
-		dmediodia();
-		dtarde();
-		buscarobserva1();
+		//nhijos();
+		//nombresalu();
+		//dmanana();
+		//dmediodia();
+		//dtarde();
+		//buscarobserva1();
+		portada();
 		comprobarid()
 		globo();
 }
